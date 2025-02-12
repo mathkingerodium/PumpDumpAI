@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PumpDumpAI - AI-Powered Crypto Market Intelligence</title>
+    
+    <!-- Meta tags for SEO and social sharing -->
+    <meta name="description" content="PumpDumpAI is an AI-powered crypto market intelligence platform providing real-time insights and analysis for the Solana ecosystem.">
+    <meta name="keywords" content="crypto, solana, market intelligence, AI, blockchain">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://PumpDumpAI.io/">
+    <meta property="og:title" content="PumpDumpAI - AI-Powered Crypto Market Intelligence">
+    <meta property="og:description" content="Real-time crypto market intelligence powered by AI">
+    <meta property="og:image" content="images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@PumpDumpAIapp">
+    <meta name="twitter:creator" content="@PumpDumpAIapp">
+    <meta name="twitter:url" content="https://PumpDumpAI.io/">
+    <meta name="twitter:title" content="PumpDumpAI - AI-Powered Crypto Market Intelligence">
+    <meta name="twitter:description" content="Real-time crypto market intelligence powered by AI">
+    <meta name="twitter:image" content="/assets/og-image.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1F2937">
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script src="js/framer-motion.js"></script>
+    <script src="js/index.iife.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-animation"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="background-animation"></div>
+    
+    <!-- Header -->
+    <header class="header relative">
+        <button id="settingsButton" class="absolute top-4 right-4 p-3 rounded-lg hover:bg-gray-800/50 transition-colors">
+            <svg class="w-7 h-7 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+        </button>
+        <h1 class="logo">PumpFunAI</h1>
+        <p class="subtitle">AI-Powered Crypto Market Intelligence</p>
+        <div id="countdown" class="mb-4">Next Market Update In</div>
+        <div class="flex items-center justify-center w-full">
+            <button id="walletButton" class="wallet-button">
+                Connect Wallet
+            </button>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container mx-auto px-4">
+        <div class="main-content">
+            <!-- Token Feed -->
+            <section class="glass">
+                <h2 class="text-xl font-bold p-4 border-b border-gray-700">Tokens</h2>
+                <div class="border-b border-gray-700">
+                    <div class="flex">
+                        <button class="px-4 py-2 text-sm font-medium text-white bg-gray-800/50 border-b-2 border-blue-500">Latest Tokens</button>
+                        <button class="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-colors">About to Graduate</button>
+                        <button class="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-colors">Graduated</button>
+                    </div>
+                </div>
+                <div id="tokenFeed" class="token-feed">
+                    <!-- Token cards will be inserted here -->
+                </div>
+            </section>
+            
+            <!-- AI Insights -->
+            <section class="glass">
+                <h2 class="text-xl font-bold p-4 border-b border-gray-700">AI Market Insights</h2>
+                <div id="insights" class="insights">
+                    <!-- Insight cards will be inserted here -->
+                </div>
+            </section>
+            
+            <!-- Token Insights -->
+            <section class="glass">
+                <h2 class="text-xl font-bold p-4 border-b border-gray-700">Token Insights</h2>
+                <div id="projects" class="token-insights">
+                    <!-- Token insights will be inserted here -->
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="glass mt-8 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center justify-center gap-8">
+                <div class="grid grid-cols-3 gap-16">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-12 h-12 mb-3">
+                            <svg class="w-full h-full text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"></path>
+                            </svg>
+                        </div>
+                        <span class="text-gray-400 text-sm">AI Analysis</span>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-12 h-12 mb-3">
+                            <svg class="w-full h-full text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"></path>
+                            </svg>
+                        </div>
+                        <span class="text-gray-400 text-sm">Real-time Trends</span>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-12 h-12 mb-3">
+                            <svg class="w-full h-full text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-gray-400 text-sm">Risk Assessment</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center gap-4">
+                    <a href="https://twitter.com/PumpDumpAIapp" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                        </svg>
+                        <span class="text-sm">Follow us on Twitter</span>
+                    </a>
+                    <a href="/documentation.html" class="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                        <span class="text-sm">Documentation</span>
+                    </a>
+                    <div class="text-sm text-gray-400">Powered by DeepSeek</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/wallet.js"></script>
+    <script src="js/insights.js"></script>
+    <script src="js/projects.js"></script>
+
+ </body></html>
