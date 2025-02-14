@@ -20,7 +20,6 @@
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente (caso necessário) */
-    height: 100vh; /* Opcional: centraliza na altura total da tela */
 }
 
 .logo {
