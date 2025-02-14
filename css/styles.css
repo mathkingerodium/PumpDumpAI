@@ -16,6 +16,18 @@
   --card-hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente (caso necessário) */
+    height: 100vh; /* Opcional: centraliza na altura total da tela */
+}
+
+.logo {
+    max-width: 200px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
 /* Base Styles */
 body {
   background: var(--primary-dark);
